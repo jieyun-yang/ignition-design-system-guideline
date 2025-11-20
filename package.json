@@ -1,0 +1,28 @@
+{
+  "name": "ignition-design-system-guideline",
+  "version": "1.0.0",
+  "description": "MCP server for Ignition Spark Design System with design review and pattern guidance tools",
+  "type": "module",
+  "main": "mcp-server.js",
+  "scripts": {
+    "start": "node mcp-server.js",
+    "scrape": "node ../scraper/gemini-scraper.js",
+    "test": "node ../scraper/test-scraper.js",
+    "install-browsers": "playwright install chromium"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "design-system",
+    "ignition-spark",
+    "figma",
+    "design-review"
+  ],
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "@modelcontextprotocol/sdk": "^0.5.0",
+    "playwright": "^1.40.0",
+    "turndown": "^7.1.2",
+    "turndown-plugin-gfm": "^1.0.2"
+  }
+}
